@@ -1,0 +1,36 @@
+#navigation{
+    max-width:1000px;
+}
+#nav-list>li{
+    list-style-type: none;
+    margin:0 10px;
+    display: flex;
+}
+#nav-list>li>a{
+    text-decoration: none;
+    color: black;
+}
+.pricing-text{
+    max-width: 650px;
+}
+.card-body>p{
+    margin: 2px 0;
+    line-height:normal;
+}
+.compare_plans{
+    max-width:1000px;
+}
+.compare_plans li{
+    list-style-type: none;
+}
+.compare_plans a{
+    text-decoration: none;
+    color: gray;
+}
+.compare_plans ul{
+    padding: 0;
+}
+#bootstrap-logo{
+    
+    color: purple;
+}

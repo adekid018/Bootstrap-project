@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="container-fluid">
+        <div class="container d-flex justify-content-between flex-md-row flex-column align-items-center border-bottom border-dark py-1 pt-2" id="navigation">
+          <div class="d-flex">
+            <i class="bi bi-bootstrap-fill fs-5 mx-2" id="bootstrap-logo"></i>
+            <h4 class="fw-normal">Pricing Example</h4>
+          </div>
+            <div class="d-flex align-items-center ">
+                <ul class="d-flex  pt-3" id="nav-list">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container-fluid my-4 ">
+        <div class="text-center  container">
+            <h1 class="display-4 fw-normal">Pricing</h1>
+            <p class="pricing-text mx-auto fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+        </div>
+        <div class="container-fluid mycards">
+          <div class="row py-2 px-lg-5 d-flex justify-content-md-center row-cols-1 row-cols-md-4">
+              <div class="col card text-center my-2 px-0 mx-md-3">
+                  <div class="card-header fs-3 p-2">
+                    Free
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title mb-3 fs-1 fw-semibold my-1">$0<small class="fs-4 text-muted fw-normal">/mo</small></h5>
+                    <p class="card-text">10 users included</p>
+                    <p class="card-text">2 gb of storage</p>
+                    <p class="card-text">Email Support</p>
+                    <p class="card-text">Help center access</p>
+                    <a href="#" class="btn btn-outline-primary d-block text-center mt-4 fs-5 py-2 py-2">Sign up for free</a>
+                  </div>
+                </div>
+                <div class="col card text-center my-2 px-0 mx-md-3">
+                  <div class="card-header fs-3 p-2">
+                    Pro
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title mb-3 fs-1 fw-semibold my-1">$15<small class="fs-4 text-muted fw-normal">/mo</small></h5>
+                    <p class="card-text">10 users included</p>
+                    <p class="card-text">2 gb of storage</p>
+                    <p class="card-text">Email Support</p>
+                    <p class="card-text">Help center access</p>
+                    <a href="#" class="btn btn-primary d-block mt-4 fs-5 py-2">Get started</a>
+                  </div>
+                </div>
+                <div class="col card text-center my-2 px-0 border border-primary mx-md-3">
+                  <div class="card-header fs-3 p-2 bg-primary text-white">
+                    Enterprise
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title mb-3 fs-1 fw-semibold my-1">$29<small class="fs-4 text-muted fw-normal">/mo</small></h5>
+                    <p class="card-text">10 users included</p>
+                    <p class="card-text">2 gb of storage</p>
+                    <p class="card-text">Email Support</p>
+                    <p class="card-text">Help center access</p>
+                    <a href="#" class="btn btn-primary d-block mt-4 fs-5 py-2">Contact us</a>
+                  </div>
+                </div>
+          </div>
+        </div>
+          <div class="">
+            <p class="text-center fs-1 fw-light py-3">Compare plans</p>
+            <table class="table text-center compare_plans mx-auto">
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 40%;"></th>
+                  <th scope="col" style="width: 20%;">Free</th>
+                  <th scope="col" style="width: 20%;">Pro</th>
+                  <th scope="col"style="width: 20%;">Enterprise</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Public</th>
+                  <td><i class="bi bi-check2 fs-5"></i></td>
+                  <td><i class="bi bi-check2 fs-5"></i></td>
+                  <td><i class="bi bi-check2 fs-5"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Private</th>
+                  <td></td>
+                  <td><i class="bi bi-check2 fs-5"></i></td>
+                  <td><i class="bi bi-check2 fs-5"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Permissions</th>
+                  <td><i class="bi bi-check2 fs-5"></i></td>
+                  <td><i class="bi bi-check2 fs-5"></i></td>
+                  <td><i class="bi bi-check2 fs-5"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Sharing</th>
+                  <td></td>
+                  <td><i class="bi bi-check2 fs-5"></i></td>
+                  <td><i class="bi bi-check2 fs-5"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Unlimited members</th>
+                  <td></td>
+                  <td><i class="bi bi-check2 fs-5"></i></td>
+                  <td id="trial"><i class="bi bi-check2 fs-5"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Extra security</th>
+                  <td></td>
+                  <td></td>
+                  <td><i class="bi bi-check2 fs-5"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </section>
+    <footer class=" mt-md-5 pt-md-4 mb-md-3">
+      <div class="row row-cols-md-4 compare_plans mx-auto border-top border-muted py-md-5 py-2">
+        <div class="col-12 col-md-3 text-muted">
+          <i class="bi bi-bootstrap-fill fs-5" id="bootstrap-logo"></i>
+          <p>&copy; 2017-2022</p>
+        </div>
+        <div class="col ">
+          <h5>Features</h5>
+          <ul>
+            <li><a href="#">Cool stuff</a></li>
+            <li><a href="#">Random feature</a></li>
+            <li><a href="#">Team feature</a></li>
+            <li><a href="#">Stuff for developers</a></li>
+            <li><a href="#">Another one</a></li>
+            <li><a href="#">Last time</a></li>
+          </ul>   
+        </div>
+        <div class="col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="#">Resource</a></li>
+            <li><a href="#">Resource name</a></li>
+            <li><a href="#">Another resource</a></li>
+            <li><a href="#">Final resource</a></li>
+          </ul>   
+        </div>
+        <div class="col-12 col-md-3 ">
+          <h5>About</h5>
+          <ul>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>   
+        </div>
+      </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
