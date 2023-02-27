@@ -9,25 +9,75 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
-<body>
+<body class="bg-light">
     <main class="mx-auto">
         <section class="header text-center py-5">
-            <i class="bi bi-bootstrap-fill fs-1 mx-2"></i>
+          <img class="d-block mx-auto mb-4" src="	https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
             <h1 class="fs-2 py-2">Checkout form</h1>
             <p class="fs-5 px-1">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
         </section>
         <section>
             <div class="row justify-content-between mx-0">
-                <div class="col-8 py-4 px-1">
+              <div class="col-md-4 col-12 py-4 order-md-2">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="fs-4 text-primary">Your Cart</h2>
+                    <span class="badge bg-primary rounded-pill fs-6">3</span>
+                </div>
+                <div>
+                    <ol class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="me-auto">
+                            <div class="fw-semibold">Product name</div>
+                            <span class="fs-8">Brief description</span>
+                          </div>
+                          <span class="">$12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="me-auto">
+                            <div class="fw-semibold">Second product</div>
+                            <span>Brief description</span>
+                          </div>
+                          <span class="">$8</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="me-auto">
+                            <div class="fw-semibold">Third item</div>
+                            <span>Brief description</span>
+                          </div>
+                          <span class="">$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start bg-secondary-subtle">
+                            <div class="me-auto text-success">
+                              <div class="fw-semibold">Promo Code</div>
+                              <span>EXAMPLECODE</span>
+                            </div>
+                            <span class="text-success">$-5</span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="me-auto">
+                              <div class="fw-bold">Total (USD)</div>
+                            </div>
+                            <span class="">$20</span>
+                          </li>
+                      </ol>
+                      <div class="border rounded p-2 my-3">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Promo code" aria-label="Recipient's username" aria-describedby="button-addon2">
+                          <button class="btn btn-secondary" type="button" id="button-addon2">Reedem</button>
+                        </div>
+                      </div>
+                </div>
+            </div>  
+              <div class="col-md-8 col-12 py-4 px-sm-2 px-md-1 order-md-1">
                     <div>
                         <h2 class="fs-4">Billing address</h2>
                     </div>
                     <form class="row g-3 py-2">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                           <label for="firstName" class="form-label">First name</label>
                           <input type="text" class="form-control" id="firstName">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <label for="Lastname" class="form-label">Last name</label>
                             <input type="text" class="form-control" id="Lastname">
                         </div>
@@ -106,13 +156,14 @@
                             <div class="col-md-6">
                               <label for="name_on_card" class="form-label">Name on card</label>
                               <input type="text" class="form-control" id="name_on_card">
+                              <p class="text-muted">Full name as displayed on card</p>
                             </div>
                             <div class="col-md-6">
                                 <label for="credit_card_number" class="form-label">Credit card number</label>
                                 <input type="text" class="form-control" id="credit_card_number">
                             </div>
                           </div>
-                          <p class="text-muted">Full name as displayed on card</p>
+                          
                           <div class="row">
                             <div class="col-md-3">
                               <label for="expiration" class="form-label">Expiration</label>
@@ -129,56 +180,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-4 py-4">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h2 class="fs-4 text-primary">Your Cart</h2>
-                        <span class="badge bg-primary rounded-pill fs-6">3</span>
-                    </div>
-                    <div>
-                        <ol class="list-group">
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                              <div class="me-auto">
-                                <div class="fw-semibold">Product name</div>
-                                <span class="fs-8">Brief description</span>
-                              </div>
-                              <span class="">$12</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                              <div class="me-auto">
-                                <div class="fw-semibold">Second product</div>
-                                <span>Brief description</span>
-                              </div>
-                              <span class="">$8</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start">
-                              <div class="me-auto">
-                                <div class="fw-semibold">Third item</div>
-                                <span>Brief description</span>
-                              </div>
-                              <span class="">$5</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start bg-secondary-subtle">
-                                <div class="me-auto text-success">
-                                  <div class="fw-semibold">Promo Code</div>
-                                  <span>EXAMPLECODE</span>
-                                </div>
-                                <span class="text-success">$-5</span>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-between align-items-start">
-                                <div class="me-auto">
-                                  <div class="fw-bold">Total (USD)</div>
-                                </div>
-                                <span class="">$20</span>
-                              </li>
-                          </ol>
-                          <div class="border rounded p-2 my-3">
-                            <div class="input-group">
-                              <input type="text" class="form-control" placeholder="Promo code" aria-label="Recipient's username" aria-describedby="button-addon2">
-                              <button class="btn btn-secondary" type="button" id="button-addon2">Reedem</button>
-                            </div>
-                          </div>
-                    </div>
-                </div>
+                
             </div>
         </section>
         <footer class="text-center mt-5 mb-5">
