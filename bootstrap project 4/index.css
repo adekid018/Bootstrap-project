@@ -1,0 +1,7 @@
+.nav-list:hover{
+    color: whitesmoke !important;
+    text-decoration: none;
+}
+.container{
+    max-width: 1100px !important;
+}
