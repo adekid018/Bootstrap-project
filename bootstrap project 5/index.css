@@ -1,0 +1,15 @@
+li a{
+    text-decoration: none;
+    color:rgba(128, 128, 128,0.5) !important;
+    
+}
+.active-home{
+ 
+    border-bottom:5px solid white;
+}
+.active-link{
+    color:white !important;
+}
+ul li:hover{
+    border-bottom: 5px solid rgb(128, 128, 128,0.5);
+}
