@@ -18,9 +18,282 @@
     <title>Bootstrap project 8</title>
 </head>
 <body>
-    <nav class="bg-danger">
+    
+    <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Offcanvas navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="nav-link" aria-current="page" href="#">Products</a>
+            </li>
+            <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent2" aria-controls="navbarToggleExternalContent2" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="nav-link" href="#">Businesses we serve</a>
+            </li>
+            <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent4" aria-controls="navbarToggleExternalContent4" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="nav-link" href="#">Documentation & resources</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+              <!--button type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>-->
+          </ul>
+          <div class="d-flex mt-3" role="search">
+            <i class="bi bi-search"></i>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="collapse bg-light z-3 nav-content position-absolute" id="navbarToggleExternalContent">
+    <div class="row p-4 ">
+        <div class="col">
+            <h5 class=" h4">Products</h5>
+            <span class="">A single platform to accept payments, protect revenue, and control your finances.</span>
+        </div>
+        <div class="col">
+            <h5 class="h5">Payments</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">Online</a>
+                    <p class="small">Accept payments on your website and in-app</p>
+                </li>
+                <li>
+                    <a href="#">In-person</a>
+                    <p>Accept payments with terminals and devices</p>
+                </li>
+                <li>
+                    <a href="#">Cross channel</a>
+                    <p>Build journeys across sales channels</p>
+                </li>
+                <li>
+                    <a href="#">Adyen for Platforms</a>
+                    <p>Embed payments into your platform or marketplace</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <h5 class="h5">Enhancements</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">Risk management</a>
+                    <p class="small">Detect, prevent, and respond to fraud</p>
+                </li>
+                <li>
+                    <a href="#">Revenue optimization</a>
+                    <p>Optimize payments for more revenue</p>
+                </li>
+                <li>
+                    <a href="#">Adyen Impact</a>
+                    <p>Let customers support good causes</p>
+                </li>
+                <li>
+                    <a href="#">Authentication</a>
+                    <p>Improve the paying experience with smart authentication</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <h5 class="h5">Financial products</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">Accounts</a>
+                    <p class="small">Offer business bank accounts to users on your platform</p>
+                </li>
+                <li>
+                    <a href="#">Capital</a>
+                    <p>Enable fast business financing for your users</p>
+                </li>
+                <li>
+                    <a href="#">Issuing</a>
+                    <p>Create physical and virtual cards</p>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+  </div>
+  <div class="collapse bg-light z-3 nav-content position-absolute" id="navbarToggleExternalContent2">
+    <div class="row p-4 ">
+        <div class="col">
+            <h5 class=" h4">Businesses we serve</h5>
+            <span class="">Explore how our platform can unlock growth for your business type.</span>
+        </div>
+        <div class="col">
+            <h5 class="h5">Types</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">Digital businesses</a>
+                    <p class="small">Software, social, gaming, digital media</p>
+                </li>
+                <li>
+                    <a href="#">Mobility</a>
+                    <p>Transportation of goods and people</p>
+                </li>
+                <li>
+                    <a href="#">Retail</a>
+                    <p>Jewelry, apparel, arts, cosmetics, electronics, homeware, grocery</p>
+                </li>
+                <li>
+                    <a href="#">Platforms & Marketplaces</a>
+                    <p>Connecting buyers and sellers online</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <!--<h5 class="h5">Enhancements</h5>-->
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">Food & beverage</a>
+                    <p class="small">Quick service restaurants, restaurant chains, bars</p>
+                </li>
+                <li>
+                    <a href="#">Hospitality</a>
+                    <p>Hotels, spas, venues, leisure parks, fitness</p>
+                </li>
+                <li>
+                    <a href="#">Subscription</a>
+                    <p>Streaming, subscription boxes, memberships</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <h5 class="h5">Customers</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">Brands we work with</a>
+                    <p class="small">See which leading brands are using our products</p>
+                </li>
+                <li>
+                    <a href="#">Case studies</a>
+                    <p>Find out how businesses have grown with Adyen</p>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+  </div>
+  <div class="collapse bg-light z-3 nav-content position-absolute" id="navbarToggleExternalContent3">
+    <div class="row p-4 ">
+        <div class="col">
+            <h5 class=" h4">About</h5>
+            <span class="">With our financial technology platform, we help businesses achieve their ambitions faster.</span>
+        </div>
+        <div class="col">
+            <h5 class="h5">Company</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">Our story</a>
+                    <p class="small">Learn who we are as a company</p>
+                </li>
+                <li>
+                    <a href="#">Social responsibility</a>
+                    <p>Discover how we're building an ethical business</p>
+                </li>
+                <li>
+                    <a href="#">Careers</a>
+                    <p>Join our team</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <!--<h5 class="h5">Enhancements</h5>-->
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">Investor Relations</a>
+                    <p class="small">See our financial updates and upcoming events</p>
+                </li>
+                <li>
+                    <a href="#">Press & media</a>
+                    <p>View company news and press materials</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <h5 class="h5">Contact</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">Get in touch</a>
+                    <p class="small">Ways to reach us and office locations</p>
+                </li>
+                <li>
+                    <a href="#">Partner with us</a>
+                    <p>Learn how we can help drive your clients' growth</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+  </div>
+  <div class="collapse bg-light z-3 nav-content position-absolute" id="navbarToggleExternalContent4">
+    <div class="row p-4 ">
+        <div class="col">
+            <h5 class=" h4">Documentation & resources</h5>
+            <span class="">Materials to help you master payments and work with our platform.</span>
+        </div>
+        <div class="col">
+            <h5 class="h5">Learn</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">Knowledge Hub</a>
+                    <p class="small">Free resources and training</p>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                    <p>Keep up to date with the latest payments trends and news</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <h5 class="h5">Developers</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">Documentation</a>
+                    <p class="small">Start building an integration into Adyen</p>
+                </li>
+                <li>
+                    <a href="#">Plugins</a>
+                    <p>Accept payments on your ecommerce platform with an Adyen plugin</p>
+                </li>
+                <li>
+                    <a href="#">API Explorer</a>
+                    <p>Use the explorer to send test requests and learn about the API</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <h5 class="h5">Help</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">Knowledge</a>
+                    <p class="small">Explore our support articles or open a ticket</p>
+                </li>
+                <li>
+                    <a href="#">Academy</a>
+                    <p>Learn how to get the most out of the Adyen platform</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+    <!--<nav class="bg-danger container">
         <div class="d-flex justify-content-between">
-            <div class="nav-item-container align-items-centerd-none d-xl-flex ">
+            <div class="nav-item-container align-items-center d-xl-flex ">
                 <p>Mypage</p>
                 <ul class="list-unstyled list-group list-group-horizontal d-none d-xl-flex">
                     <li class="px-3 nav-i py-2">Products<i class="fa fa-caret-down" aria-hidden="true"></i></li>
@@ -35,17 +308,40 @@
                 <a class="px-3" href="#">Log in</a>
                 <a href="#" class="btn btn-success py-2 px-3">Contact us</a>
             </div>
-            <button class="d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="d-xl-none nav_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
                 <i class="bi bi-list"></i>
               </button>
         </div>
         <div class="row justify-content-center g-2 gx-5 py-3 dropdown-content">
             
         </div>
+        <div class="dropdown-contentnew">
+            
+        </div>
 
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body bg-success d-flex flex-column px-4">
+            <ul class="list-unstyled list-group fs-5 bg-secondary my-3">
+                <li class="px-3 nav-side py-2 bg-danger d-flex justify-content-between align-items-center">Products<i class="fa fa-caret-right" aria-hidden="true"></i></li>
+                <li class="px-3 nav-side py-2 d-flex justify-content-between align-items-center">Businesses we serve<i class="fa fa-caret-right" aria-hidden="true"></i></li>
+                <li class="px-3 nav-side py-2 d-flex justify-content-between align-items-center">About<i class="fa fa-caret-right" aria-hidden="true"></i></li>
+                <li class="px-3 py-2 d-flex justify-content-between align-items-center">Documentation & resources</li>
+                <li class="px-3 py-2 d-flex justify-content-between align-items-center">Pricing</li>
+            </ul>
+            <div class="bg-light d-flex flex-column my-1">
+                <i class="bi bi-search fs-5 px-3 py-2 my-1"><span> Search</span></i>
+                <a class="px-3 py-2 bg-danger my-1" href="#">Log in</a>
+                <a href="#" class="btn btn-success py-2 px-3 my-1">Contact us</a>
+            </div>
+          </div>
+        </div>
     </nav>
-
-    <section class="bg-light">
+-->
+    <section class="bg-light z-1">
         <div class="container-lg">
             <div class="py-5">            
             <h2 class="py-3 w-50">One platform to accept payments, protect revenue and control your finances</h2>
@@ -57,7 +353,7 @@
                 </div>
                 <div class="col ">
                     <!--icon-->
-                    <i class="bi bi-clipboard text-success"></i>
+                                    <i class="bi bi-clipboard text-success"></i>
                     <h3 class="h6">Connect online and offline</h3>
                     <small>Create superior customer experiences using cross-channel insights</small>
                 </div>
@@ -226,6 +522,7 @@
             </div>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
+    <script src="arrays.js" type="module"></script>
 </body>
 </html>
