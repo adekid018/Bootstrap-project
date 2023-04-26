@@ -1,6 +1,6 @@
 let nav_downs=document.querySelectorAll('.nav-i')
 let nav_content=document.querySelector(".dropdown-content")
-let caret=document.querySelectorAll('.fa-caret-down')
+let caret=document.querySelectorAll('.bi-caret-down-fill')
 let title_content=document.querySelector('.title_content')
 let body=document.querySelector('body')
 let nav_side=document.querySelectorAll(".nav-side")
@@ -147,7 +147,7 @@ for(let a=0; a<nav_downs.length; a++){
       //nav_content.style.height="1000"
   }) 
 }
-window.addEventListener('resize',()=>{
+/*window.addEventListener('resize',()=>{
 if(window.innerWidth>=1200){
     //console.log(nav_content)
     //nav_lists.classList.remove("")
@@ -162,7 +162,7 @@ else{
 
 })
 
-
+*/
 /*
 
 
@@ -183,25 +183,30 @@ newspaper.addEventListener("click", () => {
 });*/
 
 const navContent=document.querySelectorAll('.nav-content')
-
+const navbar_toggler=document.querySelector('.sidebar')
 const nav_link=document.querySelectorAll('.nav-link')
-for(let a=0; a<=nav_link.length; a++){
+console.log(typeof nav_link);
+for(let a=0; a<nav_link.length; a++){
   nav_link[a].addEventListener('click',()=>{
-    
+    caret[a].classList.add("hellp")
+    console.log(caret[a]);
+    caret[a].style.color="red"
     for(let b=0; b<navContent.length; b++){
-     // console.log(b);
-     //navContent[b].classList.add("d-none")
      if(b!=a){
-      //navContent[a].classList.toggle("d-none")
-        //navContent[b].classList.remove("d-none")
         console.log(b);
-        //navContent[b].classList.remove('show')
         navContent[b].classList.remove('show')
+
+      }
+      if(navbar_toggler.classList.contains('show')){
+        console.log("yes it contains show");
+        navbar_toggler.classList.remove('show')
       }
     }
+    
     
       console.log('this is '+nav_link[a].textContent);
 
      
     })
   }
+  

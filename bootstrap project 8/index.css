@@ -1,3 +1,6 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .nav-downs-content{
     height: 100px;
     transition: height 2s ease-in;
@@ -18,10 +21,31 @@
 transform: rotate(0deg);
 transition: transform 0.3s linear;
 }
-.nav-i{
+.nav-item .nav-link, .nav-other .nav-link{
+  
     border-top: 1.5px solid transparent;
 }
-.nav-i:hover{
- border-top: 1.5px solid gray;
+.nav-link:hover{
+ border-top: 1.5px solid rgb(166, 161, 161);
  cursor: pointer;
 }
+.nav-link:focus {
+  border-top: 1.5px solid rgb(41, 107, 53); 
+}
+.nav-content::-webkit-scrollbar{
+    display: none;
+  }
+  @media (max-width:800px) {
+    .nav-content{
+        font-size: xx-large !important;
+        width: 100vw !important;
+        background-color: yellow !important;
+    }
+  }
+  @media (max-width: 750px) {
+    .offcanvas{
+      width: 100vw !important;
+    } 
+  }
+  
+  

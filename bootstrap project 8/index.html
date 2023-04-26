@@ -19,48 +19,49 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Offcanvas navbar</a>
+    <nav class="navbar navbar-expand-lg py-0 ">
+    <div class="container-xl  px-3">
+      <a class="navbar-brand link-success" href="#">Adyen</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas sidebar offcanvas-end  h-100" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <div class="offcanvas-body bg-white">
+          <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 align-items-lg-center">
             <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-              <a class="nav-link" aria-current="page" href="#">Products</a>
+              <a class="nav-link py-3" aria-current="page" href="#">Products <i class="bi bi-caret-down-fill"></i></a>
             </li>
             <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent2" aria-controls="navbarToggleExternalContent2" aria-expanded="false" aria-label="Toggle navigation">
-              <a class="nav-link" href="#">Businesses we serve</a>
+              <a class="nav-link py-3" href="#">Businesses we serve <i class="bi bi-caret-down-fill"></i></a>
             </li>
             <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3" aria-expanded="false" aria-label="Toggle navigation">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link py-3" href="#">About <i class="bi bi-caret-down-fill"></i></a>
             </li>
             <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent4" aria-controls="navbarToggleExternalContent4" aria-expanded="false" aria-label="Toggle navigation">
-                <a class="nav-link" href="#">Documentation & resources</a>
+                <a class="nav-link py-3" href="#">Documentation & resources <i class="bi bi-caret-down-fill"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link py-3" href="#">Pricing</a>
             </li>
               <!--button type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>-->
           </ul>
-          <div class="d-flex mt-3" role="search">
-            <i class="bi bi-search"></i>
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <div class="nav-other d-flex flex-column flex-lg-row justify-content-evenly align-items-lg-center">
+            <i class="bi bi-search mx-2 my-3 my-lg-0 nav-link py-lg-3 bg-danger"><span class="d-lg-none">Search</span></i>
+            <a href="#" class="link-dark mx-2 my-3 my-lg-0 nav-link py-lg-3">Log in</a>
+            <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+            <button class="btn btn-success py-2 px-3 fw-bold mx-2 my-3 my-lg-0">Contact us</button>
           </div>
         </div>
       </div>
     </div>
   </nav>
-  <div class="collapse bg-light z-3 nav-content position-absolute" id="navbarToggleExternalContent">
+  <div class="collapse bg-danger  z-3 nav-content position-absolute" id="navbarToggleExternalContent">
     <div class="row p-4 ">
         <div class="col">
             <h5 class=" h4">Products</h5>
@@ -240,13 +241,13 @@
     </div>
     
   </div>
-  <div class="collapse bg-light z-3 nav-content position-absolute" id="navbarToggleExternalContent4">
+  <div class="collapse offcanvas-lg offcanvas-end bg-danger overflow-auto z-3 nav-content position-absolute" id="navbarToggleExternalContent4">
     <div class="row p-4 ">
-        <div class="col">
+        <div class="col-lg col-12">
             <h5 class=" h4">Documentation & resources</h5>
             <span class="">Materials to help you master payments and work with our platform.</span>
         </div>
-        <div class="col">
+        <div class="col-lg col-12">
             <h5 class="h5">Learn</h5>
             <ul class="list-unstyled">
                 <li>
@@ -259,7 +260,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col">
+        <div class="col-lg col-12">
             <h5 class="h5">Developers</h5>
             <ul class="list-unstyled">
                 <li>
@@ -276,7 +277,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col">
+        <div class="col-lg col-12">
             <h5 class="h5">Help</h5>
             <ul class="list-unstyled">
                 <li>
@@ -291,80 +292,30 @@
         </div>
     </div>
   </div>
-    <!--<nav class="bg-danger container">
-        <div class="d-flex justify-content-between">
-            <div class="nav-item-container align-items-center d-xl-flex ">
-                <p>Mypage</p>
-                <ul class="list-unstyled list-group list-group-horizontal d-none d-xl-flex">
-                    <li class="px-3 nav-i py-2">Products<i class="fa fa-caret-down" aria-hidden="true"></i></li>
-                    <li class="px-3 nav-i py-2">Businesses we serve<i class="fa fa-caret-down" aria-hidden="true"></i></li>
-                    <li class="px-3 nav-i py-2">About<i class="fa fa-caret-down" aria-hidden="true"></i></li>
-                    <li class="px-3">Documentation & resources</li>
-                    <li class="px-3">Pricing</li>
-                </ul>
-            </div>
-            <div class="d-none bg-secondary d-xl-flex px-3 align-items-center">
-                <i class="bi bi-search fs-5 px-3"></i>
-                <a class="px-3" href="#">Log in</a>
-                <a href="#" class="btn btn-success py-2 px-3">Contact us</a>
-            </div>
-            <button class="d-xl-none nav_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-                <i class="bi bi-list"></i>
-              </button>
-        </div>
-        <div class="row justify-content-center g-2 gx-5 py-3 dropdown-content">
-            
-        </div>
-        <div class="dropdown-contentnew">
-            
-        </div>
 
-        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body bg-success d-flex flex-column px-4">
-            <ul class="list-unstyled list-group fs-5 bg-secondary my-3">
-                <li class="px-3 nav-side py-2 bg-danger d-flex justify-content-between align-items-center">Products<i class="fa fa-caret-right" aria-hidden="true"></i></li>
-                <li class="px-3 nav-side py-2 d-flex justify-content-between align-items-center">Businesses we serve<i class="fa fa-caret-right" aria-hidden="true"></i></li>
-                <li class="px-3 nav-side py-2 d-flex justify-content-between align-items-center">About<i class="fa fa-caret-right" aria-hidden="true"></i></li>
-                <li class="px-3 py-2 d-flex justify-content-between align-items-center">Documentation & resources</li>
-                <li class="px-3 py-2 d-flex justify-content-between align-items-center">Pricing</li>
-            </ul>
-            <div class="bg-light d-flex flex-column my-1">
-                <i class="bi bi-search fs-5 px-3 py-2 my-1"><span> Search</span></i>
-                <a class="px-3 py-2 bg-danger my-1" href="#">Log in</a>
-                <a href="#" class="btn btn-success py-2 px-3 my-1">Contact us</a>
-            </div>
-          </div>
-        </div>
-    </nav>
--->
-    <section class="bg-light z-1">
+    <section class="z-1">
         <div class="container-lg">
             <div class="py-5">            
             <h2 class="py-3 w-50">One platform to accept payments, protect revenue and control your finances</h2>
-            <div class="row rows-md-1 rows-lg-4">
-                <div class="col bg-success">
-                    <i class="bi bi-globe-central-south-asia text-success"></i>
-                    <h3 class="h6">Expand your business</h3>
-                    <small>Easily add more <a href="#">payment methods</a>and grow into new markets with local acquiring</small>
+            <div class="row g-2 justify-content-between ">
+                <div class="col-12 col-md bg-danger w-50" style="max-width: 500px;">
+                    <i class="bi bi-globe-central-south-asia text-success fs-5"></i>
+                    <h3 class="h6 pb-2 pt-4">Expand your business</h3>
+                    <small>Easily add more <a href="#">payment methods</a> and grow into new markets with local acquiring</small>
                 </div>
-                <div class="col ">
-                    <!--icon-->
-                                    <i class="bi bi-clipboard text-success"></i>
-                    <h3 class="h6">Connect online and offline</h3>
-                    <small>Create superior customer experiences using cross-channel insights</small>
+                <div class="col-12 col-md "style="max-width:300px">
+                    <i class="bi bi-clipboard text-success fs-5 my-3"></i>
+                    <h3 class="h6 pb-2 pt-4">Connect online and offline</h3>
+                    <small class="tex-muted ">Create superior customer experiences using cross-channel insights</small>
                 </div>
-                <div class="col">
-                    <i class="bi bi-check2-all text-success"></i>
-                    <h3 class="h6">Uncover areas for growth</h3>
+                <div class="col-12 col-md "style="max-width:300px">
+                    <i class="bi bi-check2-all text-success fs-5"></i>
+                    <h3 class="h6 pb-2 pt-4">Uncover areas for growth</h3>
                     <small>Gain a deeper understanding of your business with all your global payment data in one place</small>
                 </div>
-                <div class="col-lg-3 col-md-12">
-                    <i class="bi bi-shield-fill text-success"></i>
-                    <h3 class="h6">Manage fraud at a scale</h3>
+                <div class="col-12 col-xl "style="max-width:300px">
+                    <i class="bi bi-shield-fill text-success fs-5"></i>
+                    <h3 class="h6 pb-2 pt-4">Manage fraud at a scale</h3>
                     <small>Protect your business by detecting and responding to fraud without impacting real transactions</small>
                 </div>
             </div>
@@ -448,6 +399,7 @@
             </div>
         </div>        
         <div class="d-flex justify-content-evenly border-bottom py-5">
+            div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
             <p>A</p>
             <p>B</p>
             <p>C</p>
