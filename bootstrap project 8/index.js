@@ -204,12 +204,20 @@ for(let a=0; a<nav_link.length; a++){
       navContent[b].classList.remove('show')     
       }
       if(navbar_toggler.classList.contains('show')){
-    //    console.log("yes it contains show"); 
-        navbar_toggler.classList.remove('show')
+        console.log("yes it contains show"); 
+
+        /*navbar_toggler.classList.remove('show')
+        navbar_toggler.removeAttribute('aria-modal')
+        navbar_toggler.removeAttribute('role')*/
+        //navbar_toggler.setAttribute("aria-modal",false)
       }
     }
       console.log('this is '+nav_link[a].textContent);
     })
-  }/*
+  }
   const goBack=document.querySelector(".goBack")
-  goBack.addEventListener("click")*/
+  goBack.addEventListener("click",()=>{
+    navContent.forEach((value,index)=>{
+      console.log(value.classList.remove("show"))
+    })
+  })
