@@ -22,19 +22,29 @@ transform: rotate(0deg);
 transition: transform 0.3s linear;
 }
 .nav-item .nav-link, .nav-other .nav-link{
-  
     border-top: 1.5px solid transparent;
 }
+@media (min-width:980px) {
 .nav-link:hover{
  border-top: 1.5px solid rgb(166, 161, 161);
  cursor: pointer;
 }
-.nav-link:focus {
+.nav-link:focus{
   border-top: 1.5px solid rgb(41, 107, 53); 
+}
+}
+
+
+.nav-link .caret_up{
+  transform: rotate(180deg);
+}
+.nav-link .caret_down{
+  transform: rotate(0deg);
 }
 .nav-content::-webkit-scrollbar{
     display: none;
   }
+
   @media (max-width:800px) {
     .nav-content{
         font-size: xx-large !important;
@@ -48,4 +58,7 @@ transition: transform 0.3s linear;
     } 
   }
   
-  
+  .navontent{
+    position: fixed;
+    
+  }

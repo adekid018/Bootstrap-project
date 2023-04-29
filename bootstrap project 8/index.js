@@ -1,6 +1,5 @@
 let nav_downs=document.querySelectorAll('.nav-i')
 let nav_content=document.querySelector(".dropdown-content")
-let caret=document.querySelectorAll('.bi-caret-down-fill')
 let title_content=document.querySelector('.title_content')
 let body=document.querySelector('body')
 let nav_side=document.querySelectorAll(".nav-side")
@@ -12,7 +11,7 @@ const navContentAnim = [
 ];
 
 function animation (a,outdiv){
-  
+/*  
   for(let z=0; z<caret.length; z++){
     if(a!=z && caret[z].classList.contains("fa-rotate-180")){
       caret[z].classList.remove("fa-rotate-180")
@@ -35,13 +34,13 @@ function animation (a,outdiv){
       //nav_content.animate(contentOutgoing,contentOutgoingTiming)
       nav_content.classList.add("d-none")
     }
-    
+  */  
     /*
     else{
       //nav_content.classList.remove("d-none")
       console.log("This is none");
     }*/
-  }
+  //}
 }
 const navContentAnimTiming = {
   duration: 300,
@@ -181,32 +180,36 @@ const newspaper = document.querySelector(".newspaper");
 newspaper.addEventListener("click", () => {
   newspaper.animate(newspaperSpinning, newspaperTiming);
 });*/
-
+let nav_link_container=document.querySelectorAll(".nav-item")
 const navContent=document.querySelectorAll('.nav-content')
 const navbar_toggler=document.querySelector('.sidebar')
 const nav_link=document.querySelectorAll('.nav-link')
+let caret=document.querySelectorAll('.fa-caret-down')
 console.log(typeof nav_link);
 for(let a=0; a<nav_link.length; a++){
   nav_link[a].addEventListener('click',()=>{
-    caret[a].classList.add("hellp")
-    console.log(caret[a]);
-    caret[a].style.color="red"
+    if(!nav_link_container[a].classList.contains("collapsed")){
+      caret[a].classList.remove("caret_down")
+      caret[a].classList.add("caret_up")
+    }
+    else{
+      caret[a].classList.add("caret_down")
+    }
+  
     for(let b=0; b<navContent.length; b++){
+      console.log(nav_link[b]);
      if(b!=a){
-        console.log(b);
-        navContent[b].classList.remove('show')
-
+  //      console.log("this is b",b);
+      caret[b].classList.remove("caret_up")
+      navContent[b].classList.remove('show')     
       }
       if(navbar_toggler.classList.contains('show')){
-        console.log("yes it contains show");
+    //    console.log("yes it contains show"); 
         navbar_toggler.classList.remove('show')
       }
     }
-    
-    
       console.log('this is '+nav_link[a].textContent);
-
-     
     })
-  }
-  
+  }/*
+  const goBack=document.querySelector(".goBack")
+  goBack.addEventListener("click")*/
