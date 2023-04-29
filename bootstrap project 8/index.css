@@ -33,8 +33,6 @@ transition: transform 0.3s linear;
   border-top: 1.5px solid rgb(41, 107, 53); 
 }
 }
-
-
 .nav-link .caret_up{
   transform: rotate(180deg);
 }
@@ -47,7 +45,7 @@ transition: transform 0.3s linear;
 
   @media (max-width:800px) {
     .nav-content{
-        font-size: xx-large !important;
+        
         width: 100vw !important;
         background-color: yellow !important;
     }

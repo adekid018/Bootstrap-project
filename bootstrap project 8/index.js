@@ -215,9 +215,16 @@ for(let a=0; a<nav_link.length; a++){
       console.log('this is '+nav_link[a].textContent);
     })
   }
-  const goBack=document.querySelector(".goBack")
-  goBack.addEventListener("click",()=>{
-    navContent.forEach((value,index)=>{
-      console.log(value.classList.remove("show"))
+  const goBack=document.querySelectorAll(".goBack")
+  for(let a=0; a<goBack.length; a++){
+    goBack[a].addEventListener("click",()=>{
+     /* for(let a=0; a<navContent.length; a++){
+        navContent[a].classList.remove("show")
+      } */
+      navContent.forEach((value,index)=>{
+        value.classList.remove('show')
+        console.log(value.classList.remove("show"))
+      })
     })
-  })
+  }
+  
