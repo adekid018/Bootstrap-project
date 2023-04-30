@@ -198,10 +198,12 @@ for(let a=0; a<nav_link.length; a++){
   
     for(let b=0; b<navContent.length; b++){
       console.log(nav_link[b]);
+      navbar_toggler.classList.add("z-1")
      if(b!=a){
   //      console.log("this is b",b);
       caret[b].classList.remove("caret_up")
-      navContent[b].classList.remove('show')     
+      navContent[b].classList.remove('show')
+      nav_link[b].classList.remove("z-1")
       }
       if(navbar_toggler.classList.contains('show')){
         console.log("yes it contains show"); 
@@ -218,13 +220,28 @@ for(let a=0; a<nav_link.length; a++){
   const goBack=document.querySelectorAll(".goBack")
   for(let a=0; a<goBack.length; a++){
     goBack[a].addEventListener("click",()=>{
+      console.log("go back");
      /* for(let a=0; a<navContent.length; a++){
         navContent[a].classList.remove("show")
       } */
       navContent.forEach((value,index)=>{
         value.classList.remove('show')
-        console.log(value.classList.remove("show"))
+        //console.log(value.classList.remove("show"))
       })
     })
   }
-  
+  const btn_close=document.querySelectorAll(".btn-close-new")
+  for(let a=0; a<btn_close.length; a++){
+  btn_close[a].addEventListener("click",()=>{
+    navbar_toggler.toggleAttribute("show")
+    navbar_toggler.removeAttribute("role")
+    navbar_toggler.classList.remove('show')
+    navbar_toggler.removeAttribute("aria-modal")
+    navContent.forEach((value,index)=>{
+      
+      value.classList.remove('show')
+      console.log("deleting btn");
+      //console.log(value.classList.remove("show"))
+    })
+  })
+}

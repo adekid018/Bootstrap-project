@@ -28,30 +28,30 @@
       <div class="offcanvas sidebar offcanvas-end  h-100" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-          <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body bg-white">
             <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 align-items-lg-center">
             <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-              <a class="nav-link py-lg-3" aria-current="page" href="#" data-bs-dismiss="offcanvas">Products 
+              <a class="nav-link py-lg-3" aria-current="page" href="#">Products 
                 <i class="fa fa-caret-down d-lg-inline-flex d-none"></i>
                 <i class="fa fa-caret-right d-lg-none d-inline-flex float-end"></i>
             </a>
             </li>
             <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent2" aria-controls="navbarToggleExternalContent2" aria-expanded="false" aria-label="Toggle navigation">
-              <a class="nav-link py-lg-3" aria-current="page" href="#" data-bs-dismiss="offcanvas">Businesses we serve 
+              <a class="nav-link py-lg-3" aria-current="page" href="#">Businesses we serve 
                 <i class="fa fa-caret-down d-lg-inline-flex d-none"></i>
                 <i class="fa fa-caret-right d-lg-none d-inline-flex float-end"></i>
               </a>
             </li>
             <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3" aria-expanded="false" aria-label="Toggle navigation">
-                <a class="nav-link py-lg-3" href="#" data-bs-dismiss="offcanvas">About
+                <a class="nav-link py-lg-3" href="#">About
                     <i class="fa fa-caret-down d-lg-inline-flex d-none"></i>
                 <i class="fa fa-caret-right d-lg-none d-inline-flex float-end"></i>
                 </a>
             </li>
             <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent4" aria-controls="navbarToggleExternalContent4" aria-expanded="false" aria-label="Toggle navigation">
-                <a class="nav-link py-lg-3" href="#" data-bs-dismiss="offcanvas">Documentation & resources 
+                <a class="nav-link py-lg-3" href="#">Documentation & resources 
                     <i class="fa fa-caret-down d-lg-inline-flex d-none"></i>
                 <i class="fa fa-caret-right d-lg-none d-inline-flex float-end"></i>
                 </a>
@@ -75,8 +75,13 @@
   </nav>
   <div class="collapse offcanvas-lg offcanvas-end bg-danger overflow-auto z-3 nav-content position-fixed" id="navbarToggleExternalContent">
     <div class="row p-4 ">
+        <div class="d-block d-lg-none">
+            <button type="button" class="btn-close btn-close-new float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></button>
+        </div>
         <div class="col-lg col-12">
-            <h5 class="h4"><i class="fa fa-caret-left link-dark m-1 d-lg-none d-inline-flex goBack" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></i>Products</h5>            
+            <h5 class="h4">
+                <i class="fa fa-caret-left link-dark m-1 d-lg-none d-inline-flex goBack" ></i>
+                Products</h5>            
             <span class="">A single platform to accept payments, protect revenue, and control your finances.</span>
         </div>
         <div class="col-lg col-12">
@@ -143,8 +148,11 @@
   </div>
   <div class="collapse offcanvas-lg offcanvas-end bg-danger overflow-auto z-3 nav-content position-fixed " id="navbarToggleExternalContent2">
     <div class="row p-4 ">
+        <div class="d-block">
+            <button type="button" class="btn-close btn-close-new float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></button>
+        </div>
         <div class="col-lg col-12">
-            <h5 class=" h4"><i class="fa fa-caret-left link-dark m-1 d-lg-none d-inline-flex goBack" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></i>Businesses we serve</h5>
+            <h5 class=" h4"><i class="fa fa-caret-left link-dark m-1 d-lg-none d-inline-flex goBack"></i>Businesses we serve</h5>
             <span class="">Explore how our platform can unlock growth for your business type.</span>
         </div>
         <div class="col-lg col-12">
@@ -203,8 +211,11 @@
   </div>
   <div class="collapse offcanvas-lg offcanvas-end bg-danger overflow-auto z-3 nav-content position-fixed " id="navbarToggleExternalContent3">
     <div class="row p-4 ">
+        <div class="d-block">
+            <button type="button" class="btn-close btn-close-new float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></button>
+        </div>
         <div class="col-lg col-12">
-            <h5 class="h4"><i class="fa fa-caret-left link-dark m-1 d-lg-none d-inline-flex goBack" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></i>About</h5>
+            <h5 class="h4"><i class="fa fa-caret-left link-dark m-1 d-lg-none d-inline-flex goBack" ></i>About</h5>
             <span class="">With our financial technology platform, we help businesses achieve their ambitions faster.</span>
         </div>
         <div class="col-lg col-12">
@@ -255,11 +266,11 @@
   </div>
   <div class="collapse offcanvas-lg offcanvas-end overflow-auto z-3 nav-content position-fixed " id="navbarToggleExternalContent4">
     <div class="row p-4 ">
-        <button class="navbar-toggler float-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="d-block">
+            <button type="button" class="btn-close btn-close-new float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></button>
+        </div>
         <div class="col-lg col-12">
-            <h5 class="h4"><i class="fa fa-caret-left link-dark m-1 d-lg-none d-inline-flex goBack" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"></i>Documentation & resources</h5>
+            <h5 class="h4"><i class="fa fa-caret-left m-1 d-lg-none d-inline-flex goBack"></i>Documentation & resources</h5>
             <span class="">Materials to help you master payments and work with our platform.</span>
         </div>
         <div class="col-lg col-12">

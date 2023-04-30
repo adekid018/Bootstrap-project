@@ -56,7 +56,9 @@ transition: transform 0.3s linear;
     } 
   }
   
-  .navontent{
-    position: fixed;
-    
-  }
+.goBack{
+  cursor: pointer;
+}
+.goBack:hover{
+  opacity: 0.6;
+}
