@@ -24,7 +24,7 @@ transition: transform 0.3s linear;
 .nav-item .nav-link, .nav-other .nav-link{
     border-top: 1.5px solid transparent;
 }
-@media (min-width:980px) {
+@media (min-width:1200px) {
 .nav-link:hover{
  border-top: 1.5px solid rgb(166, 161, 161);
  cursor: pointer;
@@ -45,9 +45,7 @@ transition: transform 0.3s linear;
 
   @media (max-width:800px) {
     .nav-content{
-        
         width: 100vw !important;
-        background-color: yellow !important;
     }
   }
   @media (max-width: 750px) {
@@ -55,7 +53,9 @@ transition: transform 0.3s linear;
       width: 100vw !important;
     } 
   }
-  
+.nav-item .nav-link{
+  font-size: 0.8rem !important;
+ } 
 .goBack{
   cursor: pointer;
 }
