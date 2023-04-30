@@ -29,6 +29,9 @@ transition: transform 0.3s linear;
  border-top: 1.5px solid rgb(166, 161, 161);
  cursor: pointer;
 }
+.nav-item .nav-link{
+  font-size: 0.8rem !important;
+ } 
 .nav-link:focus{
   border-top: 1.5px solid rgb(41, 107, 53); 
 }
@@ -48,14 +51,12 @@ transition: transform 0.3s linear;
         width: 100vw !important;
     }
   }
-  @media (max-width: 750px) {
+  @media (max-width: 767px) {
     .offcanvas{
       width: 100vw !important;
     } 
   }
-.nav-item .nav-link{
-  font-size: 0.8rem !important;
- } 
+
 .goBack{
   cursor: pointer;
 }
