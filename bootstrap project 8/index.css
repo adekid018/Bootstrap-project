@@ -1,22 +1,6 @@
 *{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.nav-downs-content{
-    height: 100px;
-    transition: height 2s ease-in;
-}
-.nav-links:focus .nav-downs-content{
-    height: 1000px;
-}
-.nav-i .nav_icon{
-    background-color: plum;
-    transform: rotate(90deg);
-    transform: rotate(60deg);
-  -webkit-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  transform: scaleX(2);
-  transform: translateX(180px) rotate(45deg);
-}
 .fa-caret-down{
 transform: rotate(0deg);
 transition: transform 0.3s linear;
@@ -24,18 +8,31 @@ transition: transform 0.3s linear;
 .nav-item .nav-link, .nav-other .nav-link{
     border-top: 1.5px solid transparent;
 }
+.nav_link_success,.body_success_link{
+  text-decoration: none;
+}
+.nav_link_success:hover{
+  text-decoration: underline;
+}
 @media (min-width:1200px) {
 .nav-link:hover{
  border-top: 1.5px solid rgb(166, 161, 161);
  cursor: pointer;
 }
-.nav-item .nav-link{
-  font-size: 0.8rem !important;
- } 
 .nav-link:focus{
   border-top: 1.5px solid rgb(41, 107, 53); 
 }
 }
+@media (max-width:1200px) {
+  .nav-item .nav-link{
+    font-weight:600;
+   } 
+    
+}
+.nav-item .nav-link{
+  font-size: 0.9rem !important;
+ } 
+
 .nav-link .caret_up{
   transform: rotate(180deg);
 }
@@ -56,10 +53,25 @@ transition: transform 0.3s linear;
       width: 100vw !important;
     } 
   }
+.badge{
+  font-weight: 500 !important;
+  color: rgba(0, 0, 0, 0.600) !important;
+  background-color:rgba(102, 205, 171, 0.37) !important;
+}
+.body_success_icon{
+  margin-left:0;
+  transition: margin-left 0.3s linear;
+}
 
+.body_success_link:hover .body_success_icon {
+  margin-left: 5px;
+}
 .goBack{
   cursor: pointer;
 }
 .goBack:hover{
   opacity: 0.6;
+}
+.footer{
+  background-color:rgb(5, 5, 37)
 }
