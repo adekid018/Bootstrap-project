@@ -1,4 +1,4 @@
-const top_data=[{
+/*const top_data=[{
     header1:"Product",
     h_c:"A single platform to accept payments, protect revenue, and control your finances.",
   body:[{
@@ -154,5 +154,31 @@ const top_data=[{
   ]}
   ]
   }]
+*/
 
-  export default top_data
+const body_nav_content_array=[`<div class=" col-md-6 col-12 mx-auto rounded px-0 order-md-last my-auto">
+<img src="https://adyen.getbynder.com/m/4f199bfd79070d3a/webimage-homepage-square-spotify.jpg" class="img-fluid  d-block rounded" alt="Dashboard around risk testing">
+</div>
+<div class="col-md-5 col-12 justify-content-center d-flex flex-column order-1">
+<h4 class="h3">Digital businesses</h4>
+<p>Optimize conversion by offering seamless payments and authentication. Learn where and how to expand your business next, supported by insights. All while managing risk at scale.</p>
+<a href="#" class="link-success body_success_link fw-bold d-flex align-items-center">Seeing payments as an enabler of growth <i class="fa fa-caret-right body_success_icon pt-2 pb-1" ></i></a>
+</div>`
+  ,`<div class=" col-md-6 col-12 mx-auto rounded px-0 order-md-last my-auto">
+<img src="https://adyen.getbynder.com/m/5d6d75be90dfef76/webimage-homepage-square-joe-and-the-juice.jpg" class="img-fluid  d-block rounded" alt="Dashboard around risk testing">
+</div>
+<div class="col-md-5 col-12 justify-content-center d-flex flex-column order-1">
+<h4 class="h3">Omnichannel</h4>
+<p>Accelerate your digital transformation. Connect your online and offline payment data in one system. Deliver more flexible buying journeys and build a deeper understanding of your customers’ behaviour.</p>
+<a href="#" class="link-success body_success_link fw-bold d-flex align-items-center">Using payment technology to improve customer experience <i class="fa fa-caret-right body_success_icon pt-2 pb-1" ></i></a>
+</div>`,
+`<div class=" col-md-6 col-12 mx-auto rounded px-0 order-md-last my-auto">
+<img src="https://adyen.getbynder.com/m/3fb8a3634e9329bd/webimage-lightspeed-case-study.jpg" class="img-fluid  d-block rounded" alt="Dashboard around risk testing">
+</div>
+<div class="col-md-5 col-12 justify-content-center d-flex flex-column order-1">
+<h4 class="h3">Platforms & marketplaces</h4>
+<p>Increase revenue and reduce churn by offering your users an elevated experience. Provide integrated payments and scale globally with one payments system.</p>
+<a href="#" class="link-success body_success_link fw-bold d-flex align-items-center">Check how Lightspeed is integrating payments with Adyen
+<i class="fa fa-caret-right body_success_icon pt-2 pb-1" ></i></a>
+</div>`]
+  export default body_nav_content_array

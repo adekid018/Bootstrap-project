@@ -4,7 +4,7 @@ let title_content=document.querySelector('.title_content')
 let body=document.querySelector('body')
 let nav_side=document.querySelectorAll(".nav-side")
 let offcanvas=document.querySelector('.dropdown-contentnew')
-import top_data from "./arrays.js"
+import body_nav_content_array from "./arrays.js"
 const navContentAnim = [
   { transform: "translateY(-300px)" },
   { transform: "translateY(0px)" },
@@ -244,4 +244,25 @@ for(let a=0; a<nav_link.length; a++){
       //console.log(value.classList.remove("show"))
     })
   })
+}
+
+//body nav eg digital business, omnichannel
+const body_nav=document.querySelectorAll(".body_nav")
+const body_nav_content=document.querySelector(".body_nav_content")
+for(let a=0; a<body_nav.length; a++){
+  body_nav[a].addEventListener('click',()=>{
+    body_nav_content.innerHTML=body_nav_content_array[a]
+    body_nav[a].classList.add("border-bottom","border-4","border-success")
+    //removing border
+    for(let b=0; b<body_nav.length; b++){
+      if(b!=a){
+        body_nav[b].classList.remove("border-bottom","border-4","border-success")
+      }
+    }
+  })
+  
+      
+    
+ 
+  
 }
