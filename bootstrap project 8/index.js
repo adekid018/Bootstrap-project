@@ -1,4 +1,4 @@
-import body_nav_content_array from "./arrays.js"
+import {body_nav_content_array} from "./arrays.js"
 
 /*window.addEventListener('resize',()=>{
 if(window.innerWidth>=1200){

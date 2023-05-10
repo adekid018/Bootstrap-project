@@ -181,4 +181,52 @@ const body_nav_content_array=[`<div class=" col-md-6 col-12 mx-auto rounded px-0
 <a href="#" class="link-success body_success_link fw-bold d-flex align-items-center">Check how Lightspeed is integrating payments with Adyen
 <i class="fa fa-caret-right body_success_icon pt-2 pb-1" ></i></a>
 </div>`]
-  export default body_nav_content_array
+const coursel_item_array=[`<div class="d-flex flex-column ">
+<img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/7d4e1d7a0e70f6d3/webimage-online-payments-credit-cards.jpg" alt="online-payments-credit-cards" class="ds-image-element__image" style="max-width: 300px;">
+<p class="fw-light">Credit Card</p>
+</div>
+<div class="d-flex flex-column">
+<img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/6a4ab04e9b4d097/webimage-online-payments-bank-transfers.jpg" alt="online-payments-bank-transfers" class="ds-image-element__image" style="max-width: 300px;">
+<p class="fw-light">Bank Transfer</p>
+</div>
+<div class="d-flex flex-column">
+<img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/3240c78684336e77/webimage-online-payments-payment-vouchers.jpg" alt="online-payments-payment-vouchers" class="ds-image-element__image" style="max-width: 300px;">
+<p class="fw-light">Payment vouchers</p>
+</div>
+<div class="d-flex flex-column">
+<img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/1614d096eaca50d9/webimage-online-payments-digital-wallets.jpg" alt="online-payments-digital-wallets" class="ds-image-element__image" style="max-width: 300px;">
+<p class="fw-light">Digital wallets</p>
+</div>
+<div class="d-flex flex-column">
+<img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/7c6a60f0a3343c78/webimage-online-payments-digital-wallets-1.jpg" alt="online-payments-digital-wallets-1" class="ds-image-element__image" style="max-width: 300px;">
+<p class="fw-light">Mobile payments</p>
+</div>
+<div class="d-flex flex-column">
+<img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/798dfe6bd511519a/webimage-online-payments-subscriptions.jpg" alt="online-payments-subscriptions" class="ds-image-element__image" style="max-width: 300px;">
+<p class="fw-light">Subscriptions</p>
+</div>`,
+`<div class="d-flex flex-column ">
+<img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/39083e9fd6a924cb/webimage-online-payments-language-localization.jpg" alt="online-payments-language-localization" class="ds-image-element__image" style="max-width: 300px;">
+<p class="fw-light">Language localization</p>
+</div>
+<div class="d-flex flex-column">
+<img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/4e9f8776bd5ed82f/webimage-online-payments-location-based-payment-options.jpg" alt="online-payments-location-based-payment-options" class="ds-image-element__image" style="max-width: 300px;">
+<p class="fw-light">Location based payment options</p>
+</div>
+<div class="d-flex flex-column">
+<img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/6b6c22f64c251d90/webimage-online-payments-tokenized-credentials.jpg" alt="online-payments-tokenized-credentials" class="ds-image-element__image" style="max-width: 300px;">
+<p class="fw-light">Tokenized credentials</p>
+</div>
+<div class="d-flex flex-column">
+<img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/38b07e0282749d70/webimage-online-payments-card-detection-and-verification.jpg" alt="online-payments-card-detection-and-verification" class="ds-image-element__image" style="max-width: 300px;">
+<p class="fw-light">Card detection and verification</p>
+</div>
+<div class="d-flex flex-column">
+<img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/20df63f5ed8df021/webimage-online-payments-responsive-to-any-device.jpg" alt="online-payments-responsive to any device" class="ds-image-element__image" style="max-width: 300px;">
+<p class="fw-light">Responsive to any device</p>
+</div>
+<div class="d-flex flex-column">
+<img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/66445460b63a7a93/webimage-online-payments-custom-error-messages.jpg" alt="online-payments-custom-error-messages" class="ds-image-element__image" style="max-width: 300px;">
+<p class="fw-light">Custom error messages</p>
+</div>`]
+  export {body_nav_content_array,coursel_item_array}
