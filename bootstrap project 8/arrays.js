@@ -155,7 +155,6 @@
   ]
   }]
 */
-
 const body_nav_content_array=[`<div class=" col-md-6 col-12 mx-auto rounded px-0 order-md-last my-auto">
 <img src="https://adyen.getbynder.com/m/4f199bfd79070d3a/webimage-homepage-square-spotify.jpg" class="img-fluid  d-block rounded" alt="Dashboard around risk testing">
 </div>
@@ -229,4 +228,71 @@ const coursel_item_array=[`<div class="d-flex flex-column ">
 <img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/66445460b63a7a93/webimage-online-payments-custom-error-messages.jpg" alt="online-payments-custom-error-messages" class="ds-image-element__image" style="max-width: 300px;">
 <p class="fw-light">Custom error messages</p>
 </div>`]
-  export {body_nav_content_array,coursel_item_array}
+const contact_dropdown=[`<option value="AboutYoucloud">AboutYoucloud</option>
+<option value="Aurora Commerce">Aurora Commerce</option>
+<option value="BigCommerce">BigCommerce</option>
+<option value="Changing platform">Changing platform</option>
+<option value="Chargebee">Chargebee</option>
+<option value="Commercetools">Commercetools</option>
+<option value="Custom platform">Custom platform</option>
+<option value="e-Milenium">e-Milenium</option>
+<option value="ePages">ePages</option>
+<option value="Episerver">Episerver</option>
+<option value="Magento">Magento</option>
+<option value="Mirakl">Mirakl</option>
+<option value="Oracle Commerce">Oracle Commerce</option>
+<option value="Oxid">Oxid</option>
+<option value="Prestashop">Prestashop</option>
+<option value="Recurly">Recurly</option>
+<option value="Salesforce B2B">Salesforce B2B</option>
+<option value="Salesforce Commerce Cloud">Salesforce Commerce Cloud</option>
+<option value="Salesforce OMS">Salesforce OMS</option>
+<option value="Sana Commerce">Sana Commerce</option>
+<option value="SAP CX (Hybris)">SAP CX (Hybris)</option>
+<option value="Shopify">Shopify</option>
+<option value="Shopware 5">Shopware 5</option>
+<option value="Shopware 6">Shopware 6</option>
+<option value="Spryker">Spryker</option>
+<option value="Sylius">Sylius</option>
+<option value="TLG Commerce">TLG Commerce</option>
+<option value="Totvs">Totvs</option>
+<option value="Vtex">Vtex</option>
+<option value="WebSphere">WebSphere</option>
+<option value="Weebly">Weebly </option>
+<option value="Wix">Wix</option>
+<option value="WooCommerce">WooCommerce</option>
+<option value="Zuora">Zuora</option>
+<option value="Other">Other</option>`,
+`<option value="Agilysys">Agilysys</option>
+<option value="Aptos">Aptos</option>
+<option value="Aria Systems">Aria Systems</option>
+<option value="Cegid">Cegid</option>
+<option value="Clock PMS">Clock PMS</option>
+<option value="Comerzzia">Comerzzia</option>
+<option value="Extenda Retail">Extenda Retail</option>
+<option value="Front Systems">Front Systems</option>
+<option value="Gantner">Gantner</option>
+<option value="Givex">Givex</option>
+<option value="Improove">Improove</option>
+<option value="Infor">Infor</option>
+<option value="LS Retail">LS Retail</option>
+<option value="MI9 Retail">MI9 Retail</option>
+<option value="Microsoft Dynamics">Microsoft Dynamics</option>
+<option value="Navipartner">Navipartner</option>
+<option value="NCR">NCR</option>
+<option value="NetSuite">NetSuite</option>
+<option value="NewBlack">NewBlack</option>
+<option value="NewStore">NewStore</option>
+<option value="OneIota">OneIota</option>
+<option value="Oracle Opera">Oracle Opera</option>
+<option value="Oracle Retail">Oracle Retail</option>
+<option value="Oracle Simphony">Oracle Simphony</option>
+<option value="PredictSpring">PredictSpring</option>
+<option value="Protel">Protel</option>
+<option value="RetailPro">RetailPro</option>
+<option value="Revel">Revel</option>
+<option value="Shiji">Shiji</option>
+<option value="Teamwork">Teamwork</option>
+<option value="Treibauf">Treibauf</option>
+<option value="Other">Other</option>`,]
+  export {body_nav_content_array,coursel_item_array,contact_dropdown}
