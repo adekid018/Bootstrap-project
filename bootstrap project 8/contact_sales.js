@@ -3,6 +3,7 @@ let phone_number=document.querySelector('.phone_number')
 let error_msg=document.querySelector('.error_msg')
 let error_msg1=document.querySelectorAll('.error_msg_new')
 
+/*
 phone_number.addEventListener('keyup',(event)=>{
     const re=/^(0{1})?[1-9]{3}-?[0-9]{3}-?[0-9]{4}$/g
     const result=re.test(event.target.value)
@@ -19,7 +20,7 @@ phone_number.addEventListener('keyup',(event)=>{
     }
     console.log(result);
 })
-
+*/
 const showError=(event,id)=>{
   event.target.style.boxShadow="inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6)"
   event.target.style.borderColor="#FF0000"
@@ -35,17 +36,52 @@ const showNormal=(event,id)=>{
   event.target.style.borderColor=""
   error_msg1[id].classList.add("d-none")
 }
+const phoneNumberRegex=(event,id)=>{
+  phone_number.addEventListener('keyup',(event)=>{
+    const re=/^(0{1})?[1-9]{1}[0-9]{2}-?[0-9]{3}-?[0-9]{4}$/g
+    const result=re.test(event.target.value)
+    console.log(result);
+    if(!result){
+      return showError(event,id)
+    }
+    else{
+      return showSuccess(event,id)
+    }
+    //return result
+  })
+}
 const newForm=document.querySelector("#form")
 
 form.addEventListener("focus",(event) => {
+  
   form.addEventListener("keyup",(event)=>{
     let id=event.target.id.charAt(event.target.id.length-1)
+    console.log(id);
+    console.log(event.target.id.charAt(event.target.id.length-1))
     if(event.target.value==""){      
       showError(event,id)
+    }
+    else if(id==3){
+      console.log("no 3");
+      phoneNumberRegex(event,id)      
     }
   else{
     showSuccess(event,id)
   }  
+  })
+
+  form.addEventListener('change',(event)=>{
+    let id=event.target.id.charAt(event.target.id.length-1)
+    console.log(event.target.value);
+    if(event.target.value==0){
+      console.log("this is zero");
+     return showError(event,id)
+    }
+    else{
+      console.log("working not zero");
+      showSuccess(event,id)
+    }
+    
   })
   },
   true
@@ -55,9 +91,6 @@ form.addEventListener(
   "blur",
   (event) => {
     let id=event.target.id.charAt(event.target.id.length-1)
-    /*if(event.target.value!=""){
-      return showSuccess(event)
-    }*/
     showNormal(event,id)
     //event.target.style.background = "";
   },

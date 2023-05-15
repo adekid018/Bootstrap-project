@@ -79,11 +79,16 @@ transition: transform 0.3s linear;
   opacity: 0.6;
 }
 .footer, .talk_to_our_team_footer{
-  
   background-color: hsl(240, 76.2%, 8.2%) !important;
 }
 .talk_to_our_team_footer:hover{
   box-shadow: 2px red;
   background-color: hsla(240, 76.2%, 50%, 0.4) !important;
   background-image: linear-gradient(hsl(240, 76.2%, 8.2%,0.1))
+}
+.footer_nav{
+  text-decoration: none;
+}
+.footer_nav:hover{
+  text-decoration: underline;
 }

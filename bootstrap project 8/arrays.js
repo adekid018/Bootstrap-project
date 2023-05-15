@@ -262,7 +262,8 @@ const contact_dropdown=[`<option value="AboutYoucloud">AboutYoucloud</option>
 <option value="Wix">Wix</option>
 <option value="WooCommerce">WooCommerce</option>
 <option value="Zuora">Zuora</option>
-<option value="Other">Other</option>`,
+<option value="Other">Other</option>`
+,
 `<option value="Agilysys">Agilysys</option>
 <option value="Aptos">Aptos</option>
 <option value="Aria Systems">Aria Systems</option>
