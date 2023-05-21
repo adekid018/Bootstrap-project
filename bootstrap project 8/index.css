@@ -78,6 +78,9 @@ transition: transform 0.3s linear;
 .goBack:hover{
   opacity: 0.6;
 }
+.body_nav{
+  cursor: pointer;
+}
 .footer, .talk_to_our_team_footer{
   background-color: hsl(240, 76.2%, 8.2%) !important;
 }

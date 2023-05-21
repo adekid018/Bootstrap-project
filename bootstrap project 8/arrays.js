@@ -1,4 +1,5 @@
-/*const top_data=[{
+/*
+const top_data=[{
     header1:"Product",
     h_c:"A single platform to accept payments, protect revenue, and control your finances.",
   body:[{
@@ -155,7 +156,8 @@
   ]
   }]
 */
-const body_nav_content_array=[`<div class=" col-md-6 col-12 mx-auto rounded px-0 order-md-last my-auto">
+
+const indexNavContent=[`<div class=" col-md-6 col-12 mx-auto rounded px-0 order-md-last my-auto">
 <img src="https://adyen.getbynder.com/m/4f199bfd79070d3a/webimage-homepage-square-spotify.jpg" class="img-fluid  d-block rounded" alt="Dashboard around risk testing">
 </div>
 <div class="col-md-5 col-12 justify-content-center d-flex flex-column order-1">
@@ -180,6 +182,7 @@ const body_nav_content_array=[`<div class=" col-md-6 col-12 mx-auto rounded px-0
 <a href="#" class="link-success body_success_link fw-bold d-flex align-items-center">Check how Lightspeed is integrating payments with Adyen
 <i class="fa fa-caret-right body_success_icon pt-2 pb-1" ></i></a>
 </div>`]
+
 const coursel_item_array=[`<div class="d-flex flex-column ">
 <img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/7d4e1d7a0e70f6d3/webimage-online-payments-credit-cards.jpg" alt="online-payments-credit-cards" class="ds-image-element__image" style="max-width: 300px;">
 <p class="fw-light">Credit Card</p>
@@ -228,6 +231,7 @@ const coursel_item_array=[`<div class="d-flex flex-column ">
 <img data-v-4efd4358="" loading="eager" src="https://adyen.getbynder.com/m/66445460b63a7a93/webimage-online-payments-custom-error-messages.jpg" alt="online-payments-custom-error-messages" class="ds-image-element__image" style="max-width: 300px;">
 <p class="fw-light">Custom error messages</p>
 </div>`]
+
 const contact_dropdown=[`<option value="AboutYoucloud">AboutYoucloud</option>
 <option value="Aurora Commerce">Aurora Commerce</option>
 <option value="BigCommerce">BigCommerce</option>
@@ -296,4 +300,4 @@ const contact_dropdown=[`<option value="AboutYoucloud">AboutYoucloud</option>
 <option value="Teamwork">Teamwork</option>
 <option value="Treibauf">Treibauf</option>
 <option value="Other">Other</option>`,]
-  export {body_nav_content_array,coursel_item_array,contact_dropdown}
+  export {indexNavContent,coursel_item_array,contact_dropdown}

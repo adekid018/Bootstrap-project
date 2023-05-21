@@ -1,26 +1,31 @@
-import {body_nav_content_array,coursel_item_array,contact_dropdown} from "./arrays.js"
+import {contact_dropdown} from "./arrays.js"
+import { navigatiobBarMethod,goBackMethod,sideBarClosebtn} from "./index.js"
 let phone_number=document.querySelector('.phone_number')
 let error_msg=document.querySelector('.error_msg')
 let error_msg1=document.querySelectorAll('.error_msg_new')
+const nav_link=document.querySelectorAll('.nav-link')
+const goBack=document.querySelectorAll(".goBack")
+const btn_close=document.querySelectorAll(".btn-close-new")
 
-/*
-phone_number.addEventListener('keyup',(event)=>{
-    const re=/^(0{1})?[1-9]{3}-?[0-9]{3}-?[0-9]{4}$/g
-    const result=re.test(event.target.value)
-    if(!result){
-        event.target.style.boxShadow="inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6)"
-        event.target.style.borderColor="#FF0000"
-        error_msg.classList.remove("d-none")
-    }
-    else{
-      event.target.style.boxShadow="inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px green"
-      event.target.style.borderColor="green"
-      error_msg.classList.add("d-none")
-      console.log("true");
-    }
-    console.log(result);
-})
-*/
+for(let a=0; a<nav_link.length; a++){
+
+  nav_link[a].addEventListener('click',()=>{navigatiobBarMethod(a)},false)
+
+}
+
+
+for(let a=0; a<goBack.length; a++){
+
+  goBack[a].addEventListener("click",()=>{goBackMethod()},false)
+
+}
+
+for(let a=0; a<btn_close.length; a++){
+
+  btn_close[a].addEventListener("click",()=>{sideBarClosebtn()},false)
+
+}
+
 const showError=(event,id)=>{
   event.target.style.boxShadow="inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6)"
   event.target.style.borderColor="#FF0000"
