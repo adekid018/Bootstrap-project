@@ -92,6 +92,7 @@ for(let a=0; a<body_nav.length; a++){
 
 }
 //this was commented beczuse it was affecting other page
+
     /*body_nav_dropdown.addEventListener("change",(event)=>{
       bodyNavDropdownContent(event)
   },false)

@@ -299,5 +299,31 @@ const contact_dropdown=[`<option value="AboutYoucloud">AboutYoucloud</option>
 <option value="Shiji">Shiji</option>
 <option value="Teamwork">Teamwork</option>
 <option value="Treibauf">Treibauf</option>
-<option value="Other">Other</option>`,]
+<option value="Other">Other</option>`]
+
+const posPaymentNavContent=[`
+<div class="row body_nav_content">                    
+<div class="col-12 col-md-6 col-lg-4">
+    <div>
+        <img loading="eager" src="https://adyen.getbynder.com/transform/e8bf9bed-6fed-42d1-b412-9af67d89f2c7/website-in-person-payments-2023-09.jpg" alt="Illustration on drop-in" class="img-fluid d-block rounded bg-danger" style="aspect-ratio:2/1;" data-v-4efd4358="">
+    </div>            
+    <h5>Never miss a sale if you go offline</h5>     
+    <p class="fw-light">Continue accepting in-store payments in case of a temporary loss of internet connectivity, or fall back on a cellular connection.</p>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+    <div>
+        <img loading="eager" src="https://adyen.getbynder.com/transform/cc435471-ee35-434e-bbd9-9ebafb716719/website-in-person-payments-2023-10.jpg" alt="Illustration on drop-in" class="img-fluid d-block rounded bg-danger" style="aspect-ratio:2/1;" data-v-4efd4358="">
+    </div>            
+    <h5>Quickly send terminals to new locations</h5>     
+    <p class="fw-light">Get up and running in new stores across four continents with pre-certified terminals and one integration.</p>
+</div>
+<div class="col-12 col-lg-4">
+    <div>
+        <img loading="eager" src="https://adyen.getbynder.com/transform/4937699b-5e35-44c9-9223-bc221b3b2afe/website-in-person-payments-2023-11.jpg" alt="Illustration on drop-in" class="img-fluid d-block rounded bg-danger" style="aspect-ratio:2/1;" data-v-4efd4358="">
+    </div>            
+    <h5>Simplify reconciliation across regions</h5>     
+    <p class="fw-light">Enjoy one place for reporting and reconciliation, without the complexity of managing multiple providers.</p>
+</div>
+</div>`]
   export {indexNavContent,coursel_item_array,contact_dropdown}
+  
