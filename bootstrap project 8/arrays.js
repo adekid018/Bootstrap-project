@@ -301,8 +301,38 @@ const contact_dropdown=[`<option value="AboutYoucloud">AboutYoucloud</option>
 <option value="Treibauf">Treibauf</option>
 <option value="Other">Other</option>`]
 
-const posPaymentNavContent=[`
-<div class="row body_nav_content">                    
+const posPaymentNavContent=[
+  `<div class="col-12 py-5">
+      <h5>In your stores</h5>
+      <small>Make the very best in-store experience for your customers.</small>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
+      <div>
+          <img loading="eager" src="https://adyen.getbynder.com/transform/d6543cd6-ec44-4669-8fcf-4899bc537f6a/website-in-person-payments-2023-06.jpg" alt="Illustration on drop-in" class="img-fluid d-block rounded bg-danger" style="aspect-ratio:2/1;" data-v-4efd4358="">
+      </div>            
+      <h6 class="py-2" class="">Offer all local payment methods</h6>     
+      <p class="fw-light">Easily add the most relevant payment methods for each local market and the customers you serve.</p>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 py-3 py-lg-0">
+      <div>
+          <img loading="eager" src="https://adyen.getbynder.com/transform/89f0b2d2-1974-447f-af22-841d2857c22c/website-in-person-payments-2023-07.jpg" alt="Illustration on drop-in" class="img-fluid d-block rounded bg-danger" style="aspect-ratio:2/1;" data-v-4efd4358="">
+      </div>            
+      <h6 class="py-2">Make it easier to donate to charities</h6>     
+      <small class="fw-light">Give customers the ability to make a donation within the existing payment flow, with no impact on reconciliation or extra cost to you.</small>
+  </div>
+  <div class="col-12 col-lg-4 py-3 py-lg-0">
+      <div>
+          <img loading="eager" src="https://adyen.getbynder.com/transform/5413e9a8-8b5a-419b-8e37-5517ff13af6a/website-in-person-payments-2023-08.jpg" alt="Illustration on drop-in" class="img-fluid d-block rounded bg-danger" style="aspect-ratio:2/1;" data-v-4efd4358="">
+      </div>            
+      <h6 class="py-2">Reduce lines and wait times in store</h6>     
+      <small class="fw-light">Use mobile point of sale terminals so customers can checkout without having to wait in line.</small>
+  </div>`
+  ,
+  `
+  <div class="col-12 py-5">
+    <h5>Behind the scenes</h5>
+    <small>Use all the flexible features and add-ons.</small>
+  </div>                
 <div class="col-12 col-md-6 col-lg-4">
     <div>
         <img loading="eager" src="https://adyen.getbynder.com/transform/e8bf9bed-6fed-42d1-b412-9af67d89f2c7/website-in-person-payments-2023-09.jpg" alt="Illustration on drop-in" class="img-fluid d-block rounded bg-danger" style="aspect-ratio:2/1;" data-v-4efd4358="">
@@ -324,6 +354,6 @@ const posPaymentNavContent=[`
     <h5>Simplify reconciliation across regions</h5>     
     <p class="fw-light">Enjoy one place for reporting and reconciliation, without the complexity of managing multiple providers.</p>
 </div>
-</div>`]
-  export {indexNavContent,coursel_item_array,contact_dropdown}
+`]
+  export {indexNavContent,coursel_item_array,contact_dropdown,posPaymentNavContent}
   
