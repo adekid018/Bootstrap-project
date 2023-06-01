@@ -355,5 +355,46 @@ const posPaymentNavContent=[
     <p class="fw-light">Enjoy one place for reporting and reconciliation, without the complexity of managing multiple providers.</p>
 </div>
 `]
-  export {indexNavContent,coursel_item_array,contact_dropdown,posPaymentNavContent}
+const platformPaymentNavContent=[`<div class="col-12 col-md-5 py-5 my-auto">
+<h5>Software as a Service</h5>
+<small>Complete your business software stack by adding payments and help your users to grow their business.</small>
+<ul class="list-unstyled" style="list-style-type: none;">
+    <li class="fw-light d-flex"><i class="bi bi-check-circle-fill text-success pe-2 fs-5"></i><small>One contract for all markets, all sales channels, and preferred payment methods</small></li>
+    <li class="fw-light d-flex"><i class="bi bi-check-circle-fill text-success pe-2 fs-5"></i><small>Feature rich and includes best in class payment optimization, risk management, reporting, and operations</small></li>
+    <li class="fw-light d-flex"><i class="bi bi-check-circle-fill text-success pe-2 fs-5"></i><small>Includes point of sale terminals helping your users to create cross-channel payment experiences</small></li>
+</ul>
+</div>
+<div class="col-12 col-md-6 offset-md-1 py-3">
+<img loading="eager" src="https://adyen.getbynder.com/transform/0066f8d0-c2ce-4685-adca-563830524d3a/website-adyen-for-platforms-2023-11.jpg" alt="Person using a laptop" class="img-fluid d-block rounded bg-danger" style="aspect-ratio:1/1;">
+</div> `
+, 
+`<div class="col-12 col-md-5 py-5 my-auto">
+<h5>Marketplaces</h5>
+<small>Get buyers, sellers, and store owners up and running without the overheads and complexities of global payment processing.</small>
+<ul class="list-unstyled" style="list-style-type: none;">
+    <li class="fw-light d-flex"><i class="bi bi-check-circle-fill text-success pe-2 fs-5"></i><small>Staggered onboarding means sellers can sell in minutes</small></li>
+    <li class="fw-light d-flex"><i class="bi bi-check-circle-fill text-success pe-2 fs-5"></i><small>Real-time verification checks for KYC and sanctions</small></li>
+    <li class="fw-light d-flex"><i class="bi bi-check-circle-fill text-success pe-2 fs-5"></i><small>Advanced payment flows that fit your commision and fee</small></li>
+    <li class="fw-light d-flex"><i class="bi bi-check-circle-fill text-success pe-2 fs-5"></i><small>Fast payouts to card or bank accounts and in all major currencies</small></li>
+</ul>
+</div>
+<div class="col-12 col-md-6 offset-md-1 py-3">
+<img loading="eager" src="https://adyen.getbynder.com/transform/ebd53dd9-06bd-4695-b0ee-35ee0bceb419/website-adyen-for-platforms-2023-12.jpg" alt="Seller preparing the goods that are sold via a platform" class="img-fluid d-block rounded bg-danger" style="aspect-ratio:1/1;">
+</div> `
+,
+`<div class="col-12 col-md-5 py-5 my-auto">
+<h5>On-demand platforms</h5>
+<small>Grow your fleet and selection around the world by empowering your drivers and delivery network with one global platform.</small>
+<ul class="list-unstyled" style="list-style-type: none;">
+    <li class="fw-light d-flex"><i class="bi bi-check-circle-fill text-success pe-2 fs-5"></i><small>Flexible payout frequencies for end of sales day, shift or other schedules</small></li>
+    <li class="fw-light d-flex"><i class="bi bi-check-circle-fill text-success pe-2 fs-5"></i><small>Issue branded cards to drivers and riders to pay for orders on collection</small></li>
+    <li class="fw-light d-flex"><i class="bi bi-check-circle-fill text-success pe-2 fs-5"></i><small>Simplified tax issuance and reporting of what transactions are in each payout</small></li>
+    <li class="fw-light d-flex"><i class="bi bi-check-circle-fill text-success pe-2 fs-5"></i><small>Accept payments for orders online, on mobile or on-site</small></li>
+</ul>
+</div>
+<div class="col-12 col-md-6 offset-md-1 py-3">
+<img loading="eager" src="https://adyen.getbynder.com/transform/1fde99ce-83ec-4fce-89e1-0c6b6c60b527/website-adyen-for-platforms-2023-13.jpg" alt="Food delivery per bike" class="img-fluid d-block rounded bg-danger" style="aspect-ratio:1/1;">
+</div> `
+]
+  export {indexNavContent,coursel_item_array,contact_dropdown,posPaymentNavContent,platformPaymentNavContent}
   
